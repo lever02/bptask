@@ -1,7 +1,11 @@
 # BigPanda Task
-<img src='https://raw.githubusercontent.com/spring-projects/spring-boot/master/spring-boot-samples/spring-boot-sample-animated-banner/src/main/resources/banner.gif'/>
-<img style="-webkit-user-select: none;height: 200px;width: 266px;" src='https://media1.giphy.com/media/uIHtx5ski357O/giphy.gif'/>
-<br/>
+<img style="height: 500px;width: 366px;" src='https://media1.giphy.com/media/uIHtx5ski357O/giphy.gif'/>
+
+for word stats use : curl http://localhost:8080/pandaEvent/wordStats/ <br/>
+for a specific word stats use : curl http://localhost:8080/pandaEvent/wordStats/your_word_here <br/>
+for event type stats use : curl http://localhost:8080/pandaEvent/eventTypeStats/ <br/>
+for a specific type stats use : curl http://localhost:8080/pandaEvent/eventTypeStats/your_type_here <br/>
+
 In order to run the application you can just preform the "run" task
 simply by running "<b>./gradlew run</b>"
 
