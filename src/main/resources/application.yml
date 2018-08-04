@@ -1,0 +1,2 @@
+panda:
+  generator: ${panda_generator_path:local}

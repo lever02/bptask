@@ -1,0 +1,38 @@
+buildscript {
+    ext {
+        springBootVersion = '2.0.4.RELEASE'
+    }
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+
+plugins {
+    id 'java'
+    id 'io.spring.dependency-management' version "1.0.6.RELEASE"
+    id 'org.springframework.boot' version "2.0.4.RELEASE"
+    id 'idea'
+    id 'application'
+}
+
+group = 'com.bigpanda'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+mainClassName = 'com.bigpanda.interview.InterviewApplication'
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile 'org.apache.commons:commons-lang3:3.7'
+    compile 'org.springframework.boot:spring-boot-starter-webflux'
+
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testCompile 'io.projectreactor:reactor-test'
+}
